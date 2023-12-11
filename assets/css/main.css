@@ -1,0 +1,150 @@
+/* Navbar section */
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.header ul,
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header a,
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.mobile-nav-toggle {
+    border: 2px solid black;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .mobile-nav-toggle  {
+        display: block;
+    }
+
+}
+
+
+/* Main Section */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body .header {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.container .row {
+    margin-top: 40px;
+}
+
+.container .row p {
+    margin-top: 30px;
+}
+
+.custom-div {
+    background-color: #6f6c6c;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    border: 3px solid black;
+}
+
+.custom-div h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.chicken {
+    color: black;
+}
+
+.beef {
+    color: black;
+}
+
+.sushi {
+    color: black;
+}
+
+
+@media (min-width : 992px) {
+    .row {
+        display: flex;
+    }
+
+    .col-md-4 {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .col-sm-6 {
+        justify-content: center;
+        width: 48.5%;
+        float: left;
+        margin: 0 5px 0 5px;
+    }
+
+    .col-sm-12 {
+        margin: 0 5px 0 5px;
+        width: 100%;
+        clear: both;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+    .col-md-4 {
+        width: 100%;
+    }
+
+    body .menu-container {
+        margin-top: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    body .menu-container ul {
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+}
+
+
+    body .menu-container {
+        display: none;
+    }
+
