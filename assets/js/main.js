@@ -1,9 +1,14 @@
-let names = ["Jeyhun", "Haakov", "John", "Jacob", "Marcel", "Paula"]
 
-for (let i = 1; i < names.length; i+=2) {
-    console.log("Hello" + " " + names[i])
+var names = ["John", "Jane", "Jerry", "Mary", "Bob", "Jack"];
+
+function sayHelloOrGoodbye(name) {
+    if (name.charAt(0).toLowerCase() === 'j') {
+        console.log("Goodbye " + name);
+    } else {
+        console.log("Hello " + name);
+    }
 }
 
-for(let i = 0; i<names.length; i+=1){
-    console.log("Good Morning" + " " + names[i])
+for (var i = 0; i < names.length; i++) {
+    sayHelloOrGoodbye(names[i]);
 }
